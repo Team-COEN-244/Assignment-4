@@ -115,7 +115,7 @@ std::ostream& operator-(RationalNumber& Fraction1, RationalNumber& Fraction2)
 	result_denominator = Fraction1.denominator;
 
 	Result_Fraction->autosetRational(result_numerator, result_denominator);
-	return std::cout << std::endl << "The substraction's result of both rational numbers is: "
+	return std::cout << "The substraction's result of both rational numbers is: "
 		<< Result_Fraction->toRationalString() << std::endl;
 }
 
@@ -127,7 +127,7 @@ std::ostream& operator*(RationalNumber& Fraction1, RationalNumber& Fraction2)
 	result_denominator = Fraction1.denominator * Fraction2.denominator;
 
 	Result_Fraction.autosetRational(result_numerator, result_denominator);
-	return std::cout << std::endl << "The multiplication's result of both rational numbers is: "
+	return std::cout << "The multiplication's result of both rational numbers is: "
 		<< Result_Fraction.toRationalString() << std::endl;
 }
 
@@ -139,7 +139,7 @@ std::ostream& operator/(RationalNumber& Fraction1, RationalNumber& Fraction2)
 	result_denominator = Fraction1.denominator * Fraction2.numerator;
 
 	Result_Fraction.autosetRational(result_numerator, result_denominator);
-	return std::cout << std::endl << "The division's result of both rational numbers is: "
+	return std::cout << "The division's result of both rational numbers is: "
 		<< Result_Fraction.toRationalString() << std::endl;
 }
 
@@ -171,7 +171,7 @@ std::ostream& operator<=(RationalNumber& Fraction1, RationalNumber& Fraction2)
 	Fraction2.getcommunDenominator(Fraction1, Fraction2);
 	(Fraction1.numerator <= Fraction2.numerator) ? verify = "true" : verify = "false";
 	return std::cout << Fraction1.toRationalString() << " <= " << Fraction2.toRationalString()
-		<< "is " << verify << std::endl;
+		<< " is " << verify << std::endl;
 }
 
 std::ostream& operator>=(RationalNumber& Fraction1, RationalNumber& Fraction2)
