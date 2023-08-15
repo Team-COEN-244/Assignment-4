@@ -1,6 +1,6 @@
 # Assignment-4
 /* Mélina Deneuve ID#40153103
-   Rudy Zoghaib   ID#40025399
+   
 Assignment - 4 - COEN 244
 Environment : Visual Studio 2019 */
 
